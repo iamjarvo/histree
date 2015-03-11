@@ -5,6 +5,7 @@ defmodule Histree.Mixfile do
     [app: :histree,
      version: "0.0.1",
      elixir: "~> 1.0",
+     escript: [main_module: Histree.CLI],
      deps: deps]
   end
 
