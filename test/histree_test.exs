@@ -1,7 +1,8 @@
 defmodule HistreeTest do
   use ExUnit.Case
 
-  test "the truth" do
-    assert 1 + 1 == 2
+  test "outputs version" do
+    result = Histree.CLI.version
+    assert Regex.match?(~r/Version/, result)
   end
 end

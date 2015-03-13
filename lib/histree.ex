@@ -7,8 +7,12 @@ defmodule Histree.CLI do
     options = OptionParser.parse(args)
 
     case options do
-      { [version: true], _, _ } -> IO.puts "Version 0.0.1"
+      { [version: true], _, _ } -> version
       _ -> IO.puts "sup yall"
     end
+  end
+
+  def version do
+    "Version 0.0.1"
   end
 end
