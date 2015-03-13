@@ -13,6 +13,6 @@ defmodule Histree.CLI do
   end
 
   def version do
-    "Version 0.0.1"
+    Histree.Version.version
   end
 end
